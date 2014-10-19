@@ -1,0 +1,14 @@
+/* This is where the CSS will go */
+
+html, body {
+    background-color: #193962;
+}
+
+.bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    background-color: #953D34;
+}

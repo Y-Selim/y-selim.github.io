@@ -10,7 +10,8 @@ $(function () {
 
     if (i === windowWidth) {
       clearInterval(barMotion);
-      $('.add-wip').addClass('wip');
+      $('.add-wip').addClass('wip').fadeIn("slow");
+       $('.bar').remove().fadeOut('fast');
     }
   }, 5);
 

@@ -4,11 +4,6 @@ html, body {
     background-color: #193962;
 }
 
-html {
-  /*background: radial-gradient(#000, #111);*/
-}
-
-
 .bar {
     position: absolute;
     top: 50%;

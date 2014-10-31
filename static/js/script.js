@@ -13,7 +13,7 @@ $(function () {
       $('.add-wip').addClass('wip').fadeIn("slow");
        $('.bar').remove().fadeOut('fast');
     }
-  }, 5);
+  }, 2);
 
 });
 

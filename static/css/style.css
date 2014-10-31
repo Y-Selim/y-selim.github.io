@@ -20,7 +20,7 @@ html, body {
 }
 
 .wip .distort {
-    background-image: url("static/imgs/logo.png");
+    background-image: url("../imgs/logo.png");
     background-size: contain;
     height: 230px;
     display: block;

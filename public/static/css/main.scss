@@ -1,0 +1,41 @@
+@import "variables";
+
+// Mixins ONLY
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  -o-box-shadow: $value;
+  box-shadow: $value;
+}
+//  END OF MIXINS
+
+body{
+  font: 100% $font-stack;
+  text-align: center;
+  padding: 50px 20px 0;
+  background: $primary-bg-colour;
+  color: $primary-font-colour;
+  margin: 0;
+}
+
+h1{
+  font-size: 65px;
+  line-height: 1.2em;
+  border-bottom: #CCC solid 1px;
+  padding: 20px 0;
+}
+
+h3{
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+// Logo used in index
+.logo {
+  width: 150px;
+  height: 150px;
+  border: solid 1px #555;
+  background-color: #fff;
+  @include box-shadow(2px 6px rgba(0,0,0,0.6));
+  border-radius: 150px;
+}

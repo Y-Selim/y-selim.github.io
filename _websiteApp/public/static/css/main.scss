@@ -7,35 +7,110 @@
   -o-box-shadow: $value;
   box-shadow: $value;
 }
+@mixin transform($segment) {
+  -webkit-transform: $segment;
+  -moz-transform: $segment;
+  -o-transform: $segment;
+  transform: $segment;
+}
+@mixin transform-style($segment) {
+  -webkit-transform-style: $segment;
+  -moz-transform-style: $segment;
+  -o-transform-style: $segment;
+  transform-style: $segment;
+}
+@mixin backface-visibility($segment) {
+  -webkit-backface-visibility: $segment;
+  -moz-backface-visibility: $segment;
+  -o-backface-visibility: $segment;
+  backface-visibility: $segment;
+}
 //  END OF MIXINS
 
-body{
-  font: 100% $font-stack;
+body {
+  margin: 0;
   text-align: center;
   padding: 50px 20px 0;
-  background: $primary-bg-colour;
+  font: 100% $font-stack;
   color: $primary-font-colour;
-  margin: 0;
+  background: $primary-bg-colour;
 }
 
-h1{
+h1 {
+  padding: 20px 0;
   font-size: 65px;
   line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
+  border-bottom: #FEFEFE solid 1px;
 }
 
-h3{
+h3 {
   margin-top: 10px;
   font-weight: 300;
 }
 
-// Logo used in index
-.logo {
+a {
+  font-weight: 300;
+  text-decoration: none;
+  color: $secondary-font-colour;
+}
+
+// Rotating logo
+.logo-panel {
   width: 150px;
   height: 150px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 500px;
+
+  .front {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: inherit;
+    height: inherit;
+    transition: all .4s ease-in-out;
+    @include backface-visibility(hidden);
+    @include transform-style(preserve-3d);
+    @include transform(rotateX(0deg) rotateY(0deg));
+  }
+  .back {
+    z-index: 1;
+    @extend .front;
+    border-radius: 50%;
+    @include transform(rotateY(-180deg));
+    background-color: $primary-font-colour;
+    @include box-shadow(2px 6px rgba(0,0,0,0.6));
+  }
+
+  // on hover
+  &:hover .front {
+    z-index: 1;
+    @include transform(rotateY(180deg));
+  }
+  &:hover .back {
+    z-index: 2;
+    @include transform(rotateY(0deg));
+  }
+}
+
+.logo,
+.back-text {
+  width: inherit;
+  height: inherit;
+  border-radius: 150px;
+}
+
+.logo {
   border: solid 1px #555;
   background-color: #fff;
   @include box-shadow(2px 6px rgba(0,0,0,0.6));
-  border-radius: 150px;
 }
+
+.back-text {
+  font-size: 17pt;
+  padding-top: 35px;
+  color: $primary-bg-colour;
+}
+

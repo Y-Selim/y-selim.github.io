@@ -114,3 +114,77 @@ a {
   color: $primary-bg-colour;
 }
 
+// Social icons
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+
+    li {
+      display:inline-block;
+      *display:inline;
+      zoom:1;
+
+      a {
+        font-family:si!important;
+        font-style:normal;
+        font-weight:400;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+        -o-box-sizing:border-box;
+        box-sizing:border-box;
+
+        -o-transition:.1s;
+        -ms-transition:.1s;
+        -moz-transition:.1s;
+        -webkit-transition:.1s;
+        transition:.1s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+
+        overflow:hidden;
+        text-decoration:none;
+        text-align:center;
+        display:block;
+        position: relative;
+        z-index: 1;
+        width: 59px;
+        height: 59px;
+        line-height: 59px;
+        font-size: 32px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        margin-right: 10px;
+        color: #ffffff;
+        background-color: #404040;
+
+        &:hover {
+          z-index: 2;
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+        }
+      }
+    }
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+.soc-linkedin:before {
+    content:'j';
+    font-size: 15pt;
+}
+.soc-github:before {
+    content:'Q';
+    font-size: 15pt;
+}
+.soc-flickr:before {
+    content:'v';
+    font-size: 15pt;
+}

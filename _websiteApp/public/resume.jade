@@ -1,0 +1,180 @@
+link(rel="stylesheet" href="static/css/resume.css" type="text/css")
+
+//////////
+// Name //
+//////////
+
+h1
+  span.char.y
+    | Y
+  span.char.o
+    | O
+  span.char.u
+    | U
+  span.char.s1
+    | S
+  span.char.s2
+    | S
+  span.char.e
+    | E
+  span.char.f
+    | F
+
+  span.empty
+
+  span.char.s2
+    | S
+  span.char.e
+    | E
+  span.char.f
+    | L
+  span.char.y
+    | I
+  span.char.o
+    | M
+
+blockquote Everything boils down to the experience. I believe in perfection of creation through the journey taken. Enthusiastic towards clean user interfaces and simple user experience. Experienced with Agile and product development life cycle.
+
+.row
+  .col.s12
+    ul.tabs
+      li.tab.col.s3
+        a.active(href='#experience') Experience
+      li.tab.col.s3
+        a(href='#education') Education
+      li.tab.col.s3
+        a(href='#skills') Skills
+      li.tab.col.s3.disabled
+        a(href='#other') Other
+  #experience.col.s12
+    .chip
+      | Click anywhere on each card to reveal more information.
+      i.close.material-icons close
+
+    /////////////////
+    /// Work Cards //
+    /////////////////
+
+    // CYPHERPATH //
+    .card.grey.lighten-5.z-depth-1
+      .card-image
+        img.activator(src='static/img/cypherpath.png')
+      .card-content
+        span.card-title.activator.grey-text.text-darken-4
+          | Front-End Engineer @ Cypherpath
+          i.material-icons.right more_vert
+        p.activator August 2014 - Present
+      .card-reveal
+        span.card-title.grey-text.text-darken-4
+          | Washington, USA
+          i.material-icons.right close
+        ul.collection
+          li.collection-item Designed and implemented single page applications to assist in the user workflow and save resources.
+          li.collection-item Optimized API and views calls to postgres to handle results with 1000s queries.
+          li.collection-item Optimized assets rendering to increase performance and enhance navigation.
+          li.collection-item Created, Updated and Deleted Django forms, views and models.
+          li.collection-item Revamped user interface with more flat user-friendly design.
+          li.collection-item Reworked front-end pieces to complement multiple features.
+      .card-action
+        a(href='http://cypherpath.com' target) GoTo Cypherpath.com
+
+    // AIESEC //
+    .card.grey.lighten-5.z-depth-1
+      .card-image
+        img.activator(src='static/img/aiesecus.png')
+      .card-content
+        span.card-title.activator.grey-text.text-darken-4
+          | Multiple Roles @ AIESEC
+          i.material-icons.right more_vert
+        p.activator 2011, 2013 and 2014
+      .card-reveal
+        span.card-title.grey-text.text-darken-4
+          | From Egypt to USA
+          i.material-icons.right close
+        p
+        ul.collapsible(data-collapsible='accordion')
+          li
+            .collapsible-header
+              i.material-icons assignment_late
+              | Systems Developer, National Support Body (New York, USA)
+              span.right 2014
+            .collapsible-body
+              ul.collection(style="padding-left: 15px;")
+                li.collection-item Created guidelines for proper information management on Podio (CRM Solution).
+                li.collection-item Maintained support-ticketing system (using open-source osTicket).
+                li.collection-item Developed new UI with proper brand material.
+          li
+            .collapsible-header
+              i.material-icons assignment
+              | Webmaster, Information Systems, AIESEC International Congress (Sharm ElSheikh, Egypt)
+              span.right 2013
+            .collapsible-body
+              ul.collection(style="padding-left: 15px;")
+                li.collection-item Developed a website for livestream, with traffic that resulted in over 30,000 unique visits.
+                li.collection-item Maintained the congress website, done in synergy with the content and events managers.
+                li.collection-item Supported over 4 events in sessions logistical planning, dry runs and implementation.
+                li.collection-item Managed SEO for the congress website, that resulted in quicker indexing.
+          li
+            .collapsible-header
+              i.material-icons assignment_ind
+              | Vice President of Communication &amp; IM, AIESEC Cairo University (Cairo, Egypt)
+              span.right 2011
+            .collapsible-body
+              ul.collection(style="padding-left: 15px;")
+                    li.collection-item Implemented information management strategy, that resulted in alumni database creation and internal knowledge management system.
+                    li.collection-item Managed the first alumni networking event and the development and launch of the first brand of the local chapter.
+                    li.collection-item Developed, tracked and implemented the internal and external communication strategy.
+                    li.collection-item Awarded best communication function at national level - AIESEC Egypt.
+                    li.collection-item Deveolped, tracked and implemented the PR and branding strategy.
+                    li.collection-item Team management and development of 3 team leaders and 15 members.
+      .card-action
+        a(href='htpp://aiesec.org') GoTo aiesec.org
+
+    // Microsoft //
+    .card.grey.lighten-5.z-depth-1
+      .card-image
+        img.activator(src='static/img/microsoft.png')
+      .card-content
+        span.card-title.activator.grey-text.text-darken-4
+          | Intern, Premier Support @ Microsoft
+          i.material-icons.right more_vert
+        p.activator August 2012 - September 2012
+      .card-reveal
+        span.card-title.grey-text.text-darken-4
+          | Cairo, Egypt
+          i.material-icons.right close
+        ul.collection
+          li.collection-item Assisted the Technical Account Managers reactive support operations.
+          li.collection-item Documented and reported the flow and results of 7 customers' meetings.
+          li.collection-item Shadowed technical operations on-site with a Premier Field Engineer.
+      .card-action
+        a(href='https://www.microsoft.com/en-us/microsoftservices/support.aspx' target) GoTo Microsoft Premier Support
+
+    // Vodafone //
+    .card.grey.lighten-5.z-depth-1
+      .card-image
+        img.activator(src='static/img/vodafone.png')
+      .card-content
+        span.card-title.activator.grey-text.text-darken-4
+          | Technical Intern @ Vodafone
+          i.material-icons.right more_vert
+        p.activator July 2009 - August 2009
+      .card-reveal
+        span.card-title.grey-text.text-darken-4
+          | Cairo, Egypt
+          i.material-icons.right close
+        ul.collection
+          li.collection-item Worked with Support Team in Citrix and Microsoft SharePoint Management.
+          li.collection-item Implemented an upgrade project for internal Citrix Web Interface.
+          li.collection-item Recommended upgrading Citrix Desktop Server to XenApp.
+      .card-action
+        a(href='http://www.vodafone.com.eg/vodafoneportalWeb/en/aboutusMain_Page' target) GoTo About Vodafone
+
+  #education.col.s12 Education
+
+  #skills.col.s12 Skills
+
+  #other.col.s12 ...
+
+
+

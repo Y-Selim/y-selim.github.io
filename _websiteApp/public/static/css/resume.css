@@ -1,0 +1,25 @@
+.char {
+  font-family: Roboto, GillSans, Calibri, Trebuchet, sans-serif;
+}
+.y { color: #4285f4; }
+.o { color: #EA4335; }
+.u { color: #FBBC05; }
+.s1 { color: #4285F4; }
+.s2 { color: #34A853; }
+.e { color: #EA4335; }
+.f { color: #FBBC05; }
+.empty { padding: 10px; }
+
+
+/* Card Images */
+img.activator {
+  width: 45% !important; /* Override Width: 100% */
+  margin-top: 5px;
+  display: inline-block !important; /* I hate to use !important but sometimes ... :( */
+}
+.card-image { text-align: center; }
+
+/* Chip // Helper text */
+.chip {
+  margin-top: 5px;
+}

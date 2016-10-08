@@ -57,7 +57,7 @@ blockquote Everything boils down to the experience. I believe in perfection of c
     /////////////////
 
     // CYPHERPATH //
-    .card.grey.lighten-5.z-depth-1
+    .card.hoverable.grey.lighten-5.z-depth-1
       .card-image
         img.activator(src='static/img/cypherpath.png')
       .card-content
@@ -80,7 +80,7 @@ blockquote Everything boils down to the experience. I believe in perfection of c
         a(href='http://cypherpath.com' target) GoTo Cypherpath.com
 
     // AIESEC //
-    .card.grey.lighten-5.z-depth-1
+    .card.hoverable.grey.lighten-5.z-depth-1
       .card-image
         img.activator(src='static/img/aiesecus.png')
       .card-content
@@ -132,7 +132,7 @@ blockquote Everything boils down to the experience. I believe in perfection of c
         a(href='htpp://aiesec.org') GoTo aiesec.org
 
     // Microsoft //
-    .card.grey.lighten-5.z-depth-1
+    .card.hoverable.grey.lighten-5.z-depth-1
       .card-image
         img.activator(src='static/img/microsoft.png')
       .card-content
@@ -152,7 +152,7 @@ blockquote Everything boils down to the experience. I believe in perfection of c
         a(href='https://www.microsoft.com/en-us/microsoftservices/support.aspx' target) GoTo Microsoft Premier Support
 
     // Vodafone //
-    .card.grey.lighten-5.z-depth-1
+    .card.hoverable.grey.lighten-5.z-depth-1
       .card-image
         img.activator(src='static/img/vodafone.png')
       .card-content
@@ -172,8 +172,19 @@ blockquote Everything boils down to the experience. I believe in perfection of c
         a(href='http://www.vodafone.com.eg/vodafoneportalWeb/en/aboutusMain_Page' target) GoTo About Vodafone
 
   #education.col.s12
-
-
+    .col.s12.m8.offset-m2.16.offset-13
+      .row.valign-wrapper
+        .col.s10
+          h5 German University in Cairo
+          h6
+            b BSc, Computer Science and Engineering
+          h6
+            b A+
+            |  in Bachelor's project
+          h6 2008 - 2013
+        .col.s2
+          a(href='http://guc.edu.eg/en/about_guc/')
+            img.responsive-img(src='static/img/guc.png')
 
   #skills.col.s12
     ul.collapsible.popout(data-collapsible='accordion')
@@ -212,7 +223,7 @@ blockquote Everything boils down to the experience. I believe in perfection of c
           i.material-icons trending_flat
           | Phonegap
         .collapsible-body
-          p Used to create bachelor's project mobile payment app to enable multiple OS support.
+          p Created bachelor's project mobile payment app with Phonegap to enable multiple OS support.
       li
         .collapsible-header
           i.material-icons trending_up
